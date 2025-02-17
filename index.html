@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>2025Bible</title>
+
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div id="app">
+        <div id="sticky-message"></div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="search the scriptures">
+        </div>
+        <div id="result-count"></div>
+        <div id="books"></div>
+    </div>
+    
+    <div id="help-link">
+        <a href="https://extrememission.org/">extrememission.org</a>
+    </div>
+    
+    <div id="splash-modal">
+        <div class="modal-content">
+            <img id="splash-image" src="modal.png" alt="logo">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/bookNames.js"></script>
+    <script src="app.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
