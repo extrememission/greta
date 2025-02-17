@@ -1,3 +1,14 @@
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(registration => {
+      console.log('Service worker registered successfully:', registration.scope);
+    })
+    .catch(error => {
+      console.log('Service worker registration failed:', error);
+    });
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const booksContainer = document.getElementById('books');
     const searchInput = document.getElementById('search');
